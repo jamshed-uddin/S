@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: monospace;
+  display: grid;
+  place-items: center;
+}
+
+body,
+.snake {
+  background-color: #414141;
+}
+
+#game-board {
+  border-radius: 100px;
+  display: grid;
+  grid-template-columns: repeat(18, 1rem);
+  grid-template-rows: repeat(18, 1rem);
+  margin: 5px;
+  width: fit-content;
+}
+.game-border-1 {
+  position: relative;
+
+  width: fit-content;
+  /* display: none; */
+}
+.game-border-2 {
+  border: #595f43 solid 8px;
+  border-radius: 26px;
+  box-shadow: inset 0 0 0 10px #595f43;
+}
+.game-border-3 {
+  border: #8b966c solid 20px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 5px #8b966c;
+  background-color: #c4cfa3;
+}
+
+#instruction-text-desktop {
+  color: #c4cfa3;
+  padding: 0 0.1rem;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+#restart {
+  position: absolute;
+  display: none;
+  top: 50%;
+  /* width: 100%; */
+  left: 37%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 0.6rem;
+  margin-bottom: 10px;
+  color: #abb78a;
+}
+
+#high-score {
+  color: #d8ddca;
+  display: none;
+}
+
+.snake {
+  border: #fafafa 1px dotted;
+}
+.food {
+  background-color: #dedede;
+  border: #999 4px solid;
+}
+
+.direction-btn {
+  width: 100%;
+  text-align: center;
+
+  display: none;
+}
+
+#move-up,
+#move-down,
+#move-left,
+#move-right {
+  font-size: 2rem;
+  background-color: #d8ddca;
+  border: none;
+  padding: 1rem 0.5rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+#pause-resume {
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #d8ddca;
+  padding: 0.6rem 1.4rem;
+  border-radius: 1.3rem;
+}
+
+#move-up {
+  transform: rotate(90deg);
+  border-radius: 1.6rem 0.5rem 0.5rem 1.6rem;
+}
+#move-down {
+  transform: rotate(-90deg);
+  border-radius: 1.6rem 0.5rem 0.5rem 1.6rem;
+}
+#move-left {
+  border-radius: 1.6rem 0.5rem 0.5rem 1.6rem;
+  margin-right: 2.8rem;
+}
+#move-right {
+  margin-left: 2.8rem;
+  border-radius: 0.5rem 1.6rem 1.6rem 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  /* body {
+    display: block;
+    margin-top: 2rem;
+  } */
+
+  .direction-btn {
+    display: block;
+  }
+
+  .scores {
+    margin-top: 0.2rem;
+    font-size: 0.6rem;
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Ziggy The Snake",
+  "short_name": "Snake",
+  "start_url": "index.html",
+  "description": "A simple retro snake game.",
+  "display": "standalone",
+  "background_color": "#c4cfa3",
+  "theme_color": "#595f43",
+  "icons": [
+    {
+      "src": "/images/logo144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/images/logo152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/images/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/logo384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/images/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/Screenshotnarrow.png",
+      "type": "image/png",
+      "sizes": "540x720",
+      "form_factor": "narrow"
+    }
+  ]
+}
