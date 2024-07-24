@@ -14,14 +14,14 @@ const urlToCache = [
 self.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log("cache opened");
+      // console.log("cache opened");
       return cache.addAll(urlToCache);
     })
   );
 });
 
 self.addEventListener("fetch", (e) => {
-  console.log("url", e.request.url);
+  // console.log("url", e.request.url);
   e.respondWith(
     caches.match(e.request).then((response) => {
       return response || fetch(e.request);

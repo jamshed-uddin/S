@@ -135,6 +135,8 @@ function move() {
 function startGame() {
   collided = false;
   gameStarted = true;
+  gamePaused = false;
+  pauseResume.textContent = "Pause";
   instructionText.style.display = "none";
   clearInterval(gameInterval);
   gameInterval = setInterval(() => {
@@ -223,6 +225,22 @@ function resetGame() {
 
 function updateScore() {
   const currentScore = snake.length - 1;
+  if (currentScore >= 6) {
+    gameSpeedDelay = 350;
+  }
+  if (currentScore >= 12) {
+    gameSpeedDelay = 300;
+  }
+  if (currentScore >= 18) {
+    gameSpeedDelay = 250;
+  }
+  if (currentScore >= 24) {
+    gameSpeedDelay = 200;
+  }
+  if (currentScore >= 50) {
+    gameSpeedDelay = 180;
+  }
+
   score.textContent = currentScore.toString().padStart(3, "0");
 }
 

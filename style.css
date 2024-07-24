@@ -80,6 +80,7 @@ body,
 .snake {
   border: #fafafa 1px dotted;
 }
+
 .food {
   background-color: #dedede;
   border: #999 4px solid;
@@ -100,7 +101,7 @@ body,
   background-color: #d8ddca;
   border: none;
   padding: 1rem 0.5rem;
-  margin: 0.2rem;
+  margin: 0rem;
   cursor: pointer;
 }
 
@@ -123,10 +124,10 @@ body,
 }
 #move-left {
   border-radius: 1.6rem 0.5rem 0.5rem 1.6rem;
-  margin-right: 2.8rem;
+  margin-right: 2rem;
 }
 #move-right {
-  margin-left: 2.8rem;
+  margin-left: 2rem;
   border-radius: 0.5rem 1.6rem 1.6rem 0.5rem;
 }
 
@@ -142,6 +143,6 @@ body,
 
   .scores {
     margin-top: 0.2rem;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 }
