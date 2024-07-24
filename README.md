@@ -16,7 +16,7 @@
 ## Mobile
 
 <!-- ![alt text](https://raw.githubusercontent.com/jamshed-uddin/ziggy-the-snake/main/images/ziggythesnakeMobileview.png) -->
-<img src="https://raw.githubusercontent.com/jamshed-uddin/ziggy-the-snake/main/images/ziggythesnakeMobileview.png" width="500" />
+<img src="https://raw.githubusercontent.com/jamshed-uddin/ziggy-the-snake/main/images/ziggythesnakeMobileview.png" width="200" />
 
 ### Controls
 
